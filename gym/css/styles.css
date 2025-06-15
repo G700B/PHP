@@ -1,0 +1,39 @@
+.imagen-hover {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    padding: 0.3%;
+}
+
+.imagen-hover img {
+    display: block;
+    transition: transform 0.3s ease-out;
+}
+
+.imagen-hover:hover img {
+    transform: scale(1.1);
+}
+
+.button {
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 22px 22px;
+}
+
+button {
+    background-color: rgb(114, 169, 201);
+    color: black;
+    border: 2px solid #7592e4;
+    padding: 16px 32px;
+  border-radius: 10%;
+  text-align: center;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.eze {
+    padding: 4%;
+    
+}
+

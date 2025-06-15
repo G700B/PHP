@@ -1,0 +1,116 @@
+body {
+    background-image: url('images.png');
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #F4F4F4;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: -200px; /* Inicia oculto fuera de la pantalla */
+    height: 100%;
+    width: 200px; /* Establece el ancho del menú desplegable */
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: left 0.3s ease-in-out; /* Transición suave al aparecer */
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.menu-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-container li {
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Asegura que el fondo no se desborde */
+}
+
+/* Establecer colores de fondo originales */
+.menu-container a {
+    display: block;
+    padding: 10px 0;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent; /* Fondo transparente por defecto */
+    transition: background-color 0.3s ease; /* Suaviza el cambio del color de fondo */
+}
+
+/* Colores de fondo por defecto antes de pasar el mouse */
+.menu-container .inicio {
+    background-color: rgb(233, 104, 104); /* Naranja para INICIO */
+}
+
+.menu-container .contactanos {
+    background-color: rgb(104, 233, 104); /* Verde para CONTACTANOS */
+}
+
+.menu-container .siguenos {
+    background-color: rgb(104, 104, 233); /* Azul para SIGUENOS */
+}
+
+.menu-container .iniciar-sesion {
+    background-color: rgb(160, 66, 66); /* Rojo para INICIAR SESION */
+}
+
+.menu-container .cerrar-sesion {
+    background-color: rgb(100, 37, 37); /* Rojo para INICIAR SESION */
+}
+
+/* Efecto al pasar el mouse: cambia el fondo a negro transparente */
+.menu-container a:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con transparencia */
+}
+
+/* Mostrar el menú cuando el mouse pasa sobre el área */
+nav:hover {
+    left: 0; /* Muestra el menú al pasar el mouse */
+}
+
+.menu-container li a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Animación de desvanecimiento */
+    z-index: 1;
+}
+
+/* Mantener color blanco para el texto al pasar el mouse */
+.menu-container li a:hover {
+    color: white;
+}
+
+h1 {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        width: 100%;
+        height: auto;
+    }
+    .menu-container ul {
+        display: block;
+    }
+}
